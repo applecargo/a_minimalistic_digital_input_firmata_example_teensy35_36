@@ -1,0 +1,136 @@
+#N canvas 578 84 541 447 10;
+#X obj 71 113 arduino;
+#X msg 71 70 devices;
+#X msg 131 70 devicename /dev/ttyACM0;
+#X obj 71 134 route digital;
+#X floatatom 71 196 5 0 0 0 - - -;
+#X floatatom 86 216 5 0 0 0 - - -;
+#X floatatom 102 236 5 0 0 0 - - -;
+#X floatatom 118 256 5 0 0 0 - - -;
+#X floatatom 134 276 5 0 0 0 - - -;
+#X floatatom 150 296 5 0 0 0 - - -;
+#X floatatom 166 316 5 0 0 0 - - -;
+#X floatatom 182 336 5 0 0 0 - - -;
+#X msg 131 91 close;
+#X obj 54 226 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 69 246 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 85 266 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 101 286 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 117 306 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 133 326 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 149 346 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 165 366 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 71 155 route 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+19 20 21 22 23;
+#X floatatom 186 196 5 0 0 0 - - -;
+#X floatatom 201 216 5 0 0 0 - - -;
+#X floatatom 217 236 5 0 0 0 - - -;
+#X floatatom 233 256 5 0 0 0 - - -;
+#X floatatom 249 276 5 0 0 0 - - -;
+#X floatatom 265 296 5 0 0 0 - - -;
+#X floatatom 281 316 5 0 0 0 - - -;
+#X floatatom 297 336 5 0 0 0 - - -;
+#X obj 169 226 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 184 246 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 200 266 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 216 286 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 232 306 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 248 326 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 264 346 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 280 366 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X floatatom 301 196 5 0 0 0 - - -;
+#X floatatom 316 216 5 0 0 0 - - -;
+#X floatatom 332 236 5 0 0 0 - - -;
+#X floatatom 348 256 5 0 0 0 - - -;
+#X floatatom 364 276 5 0 0 0 - - -;
+#X floatatom 380 296 5 0 0 0 - - -;
+#X floatatom 396 316 5 0 0 0 - - -;
+#X floatatom 412 336 5 0 0 0 - - -;
+#X obj 284 226 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 299 246 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 315 266 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 331 286 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 347 306 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 363 326 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 379 346 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 395 366 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X text 5 8 .anchor.;
+#X text 116 24 firmata (digital example \, tested with teensy 3.5)
+;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 21 0;
+#X connect 4 0 13 0;
+#X connect 5 0 14 0;
+#X connect 6 0 15 0;
+#X connect 7 0 16 0;
+#X connect 8 0 17 0;
+#X connect 9 0 18 0;
+#X connect 10 0 19 0;
+#X connect 11 0 20 0;
+#X connect 12 0 0 0;
+#X connect 21 0 4 0;
+#X connect 21 1 5 0;
+#X connect 21 2 6 0;
+#X connect 21 3 7 0;
+#X connect 21 4 8 0;
+#X connect 21 5 9 0;
+#X connect 21 6 10 0;
+#X connect 21 7 11 0;
+#X connect 21 8 22 0;
+#X connect 21 9 23 0;
+#X connect 21 10 24 0;
+#X connect 21 11 25 0;
+#X connect 21 12 26 0;
+#X connect 21 13 27 0;
+#X connect 21 14 28 0;
+#X connect 21 15 29 0;
+#X connect 21 16 38 0;
+#X connect 21 17 39 0;
+#X connect 21 18 40 0;
+#X connect 21 19 41 0;
+#X connect 21 20 42 0;
+#X connect 21 21 43 0;
+#X connect 21 22 44 0;
+#X connect 21 23 45 0;
+#X connect 22 0 30 0;
+#X connect 23 0 31 0;
+#X connect 24 0 32 0;
+#X connect 25 0 33 0;
+#X connect 26 0 34 0;
+#X connect 27 0 35 0;
+#X connect 28 0 36 0;
+#X connect 29 0 37 0;
+#X connect 38 0 46 0;
+#X connect 39 0 47 0;
+#X connect 40 0 48 0;
+#X connect 41 0 49 0;
+#X connect 42 0 50 0;
+#X connect 43 0 51 0;
+#X connect 44 0 52 0;
+#X connect 45 0 53 0;
